@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30B7FB31-1577-4509-AB79-D1370326454A}|OrgCore.Infrastructure\\OrgCore.Infrastructure.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.infrastructure\\externalservices\\invertextovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30B7FB31-1577-4509-AB79-D1370326454A}|OrgCore.Infrastructure\\OrgCore.Infrastructure.csproj|solutionrelative:orgcore.infrastructure\\externalservices\\invertextovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|solutionrelative:orgcore.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93B94D25-421D-43B1-9007-56FDAF210272}|OrgCore.Domain\\OrgCore.Domain.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.domain\\interfaces\\icnpjvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B94D25-421D-43B1-9007-56FDAF210272}|OrgCore.Domain\\OrgCore.Domain.csproj|solutionrelative:orgcore.domain\\interfaces\\icnpjvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.api\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|solutionrelative:orgcore.api\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F817C4-C754-48E6-A089-6D15CE02BD44}|OrgCore.Application\\OrgCore.Application.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.application\\services\\empresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F817C4-C754-48E6-A089-6D15CE02BD44}|OrgCore.Application\\OrgCore.Application.csproj|solutionrelative:orgcore.application\\services\\empresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 284,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\appsettings.json",
+              "RelativeDocumentMoniker": "OrgCore.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\appsettings.json",
+              "RelativeToolTip": "OrgCore.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-21T17:30:52.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InvertextoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Infrastructure\\ExternalServices\\InvertextoValidator.cs",
+              "RelativeDocumentMoniker": "OrgCore.Infrastructure\\ExternalServices\\InvertextoValidator.cs",
+              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Infrastructure\\ExternalServices\\InvertextoValidator.cs",
+              "RelativeToolTip": "OrgCore.Infrastructure\\ExternalServices\\InvertextoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:27:06.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmpresaService.cs",
+              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Application\\Services\\EmpresaService.cs",
+              "RelativeDocumentMoniker": "OrgCore.Application\\Services\\EmpresaService.cs",
+              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Application\\Services\\EmpresaService.cs",
+              "RelativeToolTip": "OrgCore.Application\\Services\\EmpresaService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:24:33.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmpresaController.cs",
+              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\Controllers\\EmpresaController.cs",
+              "RelativeDocumentMoniker": "OrgCore.API\\Controllers\\EmpresaController.cs",
+              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\Controllers\\EmpresaController.cs",
+              "RelativeToolTip": "OrgCore.API\\Controllers\\EmpresaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:24:26.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICnpjValidator.cs",
+              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Domain\\Interfaces\\ICnpjValidator.cs",
+              "RelativeDocumentMoniker": "OrgCore.Domain\\Interfaces\\ICnpjValidator.cs",
+              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Domain\\Interfaces\\ICnpjValidator.cs",
+              "RelativeToolTip": "OrgCore.Domain\\Interfaces\\ICnpjValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:24:22.497Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

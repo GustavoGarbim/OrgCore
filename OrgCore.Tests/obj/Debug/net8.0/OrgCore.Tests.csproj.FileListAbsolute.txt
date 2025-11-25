@@ -1,0 +1,14 @@
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\bin\Debug\net8.0\OrgCore.Tests.deps.json
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\bin\Debug\net8.0\OrgCore.Tests.dll
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\bin\Debug\net8.0\OrgCore.Tests.pdb
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\obj\Debug\net8.0\OrgCore.Tests.csproj.AssemblyReference.cache
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\obj\Debug\net8.0\OrgCore.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\obj\Debug\net8.0\OrgCore.Tests.AssemblyInfoInputs.cache
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\obj\Debug\net8.0\OrgCore.Tests.AssemblyInfo.cs
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\obj\Debug\net8.0\OrgCore.Tests.csproj.CoreCompileInputs.cache
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\obj\Debug\net8.0\OrgCore.Tests.dll
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\obj\Debug\net8.0\refint\OrgCore.Tests.dll
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\obj\Debug\net8.0\OrgCore.Tests.pdb
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\obj\Debug\net8.0\ref\OrgCore.Tests.dll
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\bin\Debug\net8.0\OrgCore.Tests.runtimeconfig.json
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Tests\obj\Debug\net8.0\OrgCore.Tests.genruntimeconfig.cache

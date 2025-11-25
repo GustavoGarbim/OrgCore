@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "OrgCore.API.Controllers.EmpresaController",
+    "Method": "Criar",
+    "RelativePath": "api/Empresa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OrgCore.Application.DTOs.NovaEmpresaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrgCore.API.Controllers.EmpresaController",
+    "Method": "ObterTodas",
+    "RelativePath": "api/Empresa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrgCore.API.Controllers.FormulariosController",
+    "Method": "Criar",
+    "RelativePath": "api/Formularios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OrgCore.Application.DTOs.Forms.CriarFormularioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrgCore.API.Controllers.FormulariosController",
+    "Method": "ObterPorEmpresa",
+    "RelativePath": "api/Formularios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empresaId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
