@@ -11,9 +11,9 @@ namespace OrgCore.Application.Services
         private readonly IEmpresaRepository _empresaRepository;
         private readonly PessoaRepository _pessoaRepository;
         private readonly ColaboradorRepository _colaboradorRepository;
-        private readonly ICnpjValidator _cnpjValidator;
+        private readonly IDocValidator _cnpjValidator;
 
-        public EmpresaService(IEmpresaRepository empresaRepository, PessoaRepository pessoaRepository, ColaboradorRepository colaboradorRepository, ICnpjValidator cnpjValidator)
+        public EmpresaService(IEmpresaRepository empresaRepository, PessoaRepository pessoaRepository, ColaboradorRepository colaboradorRepository, IDocValidator cnpjValidator)
         {
             _empresaRepository = empresaRepository;
             _pessoaRepository = pessoaRepository;
@@ -25,7 +25,7 @@ namespace OrgCore.Application.Services
         {
             var cnpjValido = await _cnpjValidator.ValidarEmpresa(dto.Cnpj);
             if (!cnpjValido)
-                throw new Exception("CNPJ inválido ou já cadastrado.");
+                throw new Exception("CNPJ inválido.");
 
             var empresa = new Empresa(dto.NomeFantasia, dto.Cnpj);
             await _empresaRepository.Adicionar(empresa);
@@ -35,7 +35,7 @@ namespace OrgCore.Application.Services
 
             var colaborador = new Colaborador(empresa.Id, pessoa.Id);
             colaborador.TornarGestor();
-            await _colaboradorRepository.Adicionar(colaborador);
+            await _colaboradorRepository.Vincular(colaborador);
 
             await _empresaRepository.Commit();
 

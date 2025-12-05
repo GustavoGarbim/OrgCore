@@ -175,3 +175,5 @@ C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.API\bin\Debug\net8.0\OrgCore.In
 C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.API\bin\Debug\net8.0\OrgCore.Domain.pdb
 C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.API\bin\Debug\net8.0\OrgCore.Application.dll
 C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.API\bin\Debug\net8.0\OrgCore.Application.pdb
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.API\obj\Debug\net8.0\OrgCore.API.sourcelink.json
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.API\obj\Debug\net8.0\swae.build.ex.cache

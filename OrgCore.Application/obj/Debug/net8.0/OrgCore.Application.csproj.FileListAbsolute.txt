@@ -17,3 +17,4 @@ C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Application\bin\Debug\net8.0\Or
 C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Application\obj\Debug\net8.0\OrgCore..D92EA1C2.Up2Date
 C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Application\bin\Debug\net8.0\OrgCore.Infrastructure.dll
 C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Application\bin\Debug\net8.0\OrgCore.Infrastructure.pdb
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Application\obj\Debug\net8.0\OrgCore.Application.sourcelink.json

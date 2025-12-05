@@ -13,5 +13,15 @@ namespace OrgCore.Infrastructure.Repositories
         {
             await _context.Pessoas.AddAsync(pessoa);
         }
+
+        public async Task<Pessoa?> ObterPessoaPorId (Guid id)
+        {
+            return await _context.Pessoas.FindAsync(id);
+        }
+
+        public async Task<bool> Commit()
+        {
+            return await _context.SaveChangesAsync() > 0;
+        }
     }
 }

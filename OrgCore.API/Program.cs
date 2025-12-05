@@ -20,9 +20,13 @@ builder.Services.AddScoped<IEmpresaRepository, EmpresaRepository>();
 builder.Services.AddScoped<IEmpresaService, EmpresaService>();
 builder.Services.AddScoped<PessoaRepository>();
 builder.Services.AddScoped<ColaboradorRepository>();
-builder.Services.AddHttpClient<ICnpjValidator, InvertextoValidator>();
+builder.Services.AddHttpClient<IDocValidator, InvertextoValidator>();
 builder.Services.AddScoped<IFormularioRepository, FormularioRepository>();
 builder.Services.AddScoped<IFormularioService, FormularioService>();
+builder.Services.AddScoped<IPessoaService, PessoaService>();
+builder.Services.AddScoped<IPessoaRepository, PessoaRepository>();
+builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
+builder.Services.AddScoped<IColaboradorService, ColaboradorService>();
 
 var app = builder.Build();
 

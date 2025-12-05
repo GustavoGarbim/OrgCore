@@ -12,3 +12,4 @@ C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Domain\obj\Debug\net8.0\ref\Org
 C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Domain\obj\Debug\net8.0\OrgCore.Domain.csproj.AssemblyReference.cache
 C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Domain\bin\Debug\net8.0\OrgCore.Domain.runtimeconfig.json
 C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Domain\obj\Debug\net8.0\OrgCore.Domain.genruntimeconfig.cache
+C:\Users\74840\Desktop\ProjetoC#\OrgCore\OrgCore.Domain\obj\Debug\net8.0\OrgCore.Domain.sourcelink.json

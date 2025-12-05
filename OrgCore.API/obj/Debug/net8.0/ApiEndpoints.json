@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "OrgCore.API.Controllers.ColaboradorController",
+    "Method": "Vincular",
+    "RelativePath": "api/Colaborador",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OrgCore.Application.DTOs.VincularColaboradorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "OrgCore.API.Controllers.EmpresaController",
     "Method": "Criar",
     "RelativePath": "api/Empresa",
@@ -51,6 +67,38 @@
     "Parameters": [
       {
         "Name": "empresaId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrgCore.API.Controllers.PessoaController",
+    "Method": "Registrar",
+    "RelativePath": "api/Pessoa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OrgCore.Application.DTOs.CriarPessoaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrgCore.API.Controllers.PessoaController",
+    "Method": "BuscarPessoaId",
+    "RelativePath": "api/Pessoa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
         "Type": "System.Guid",
         "IsRequired": false
       }

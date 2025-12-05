@@ -23,21 +23,14 @@ namespace OrgCore.Infrastructure.Repositories
         public async Task<List<FormularioTemplate>> PegarFormulariosPorEmpresaAsync(Guid id)
         {
             var empresa = await _context.Formularios.Where(f => f.EmpresaId == id)
+                .Include(f => f.Secoes)
+                .ThenInclude(s => s.Questoes)
+                .Where(f => f.EmpresaId == id)
                 .AsNoTracking()
                 .ToListAsync();
 
             return empresa;
         }
-
-        //public async Task<List<FormularioTemplate>?> PegarFormulariosAsync()
-        //{
-        //    var empresas = await _context.Formularios
-        //        .AsNoTracking()
-        //        .OrderBy(e => e.Titulo)
-        //        .ToListAsync();
-
-        //    return empresas;
-        //}
 
         public async Task<bool> Commit()
         {
