@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OrgCore.Application.DTOs;
+using OrgCore.Application.DTOs.Empresa;
 using OrgCore.Application.Interfaces;
 
 namespace OrgCore.API.Controllers
@@ -16,10 +16,17 @@ namespace OrgCore.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Criar([FromBody] NovaEmpresaDto dto)
+        public async Task<IActionResult> Criar([FromBody] EmpresaDTO dto)
         {
             var id = await _empresaService.RegistrarEmpresa(dto);
             return Ok(new { Id = id, Mensagem = "Empresa criada com sucesso!" });
+        }
+
+        [HttpPost("{empresaId}")]
+        public async Task<AtribuirCargoDTO> AtribuirCargo([FromBody] AtribuirCargoDTO dto)
+        {
+            await _empresaService.AtribuirCargo(dto);
+            return dto;
         }
 
         [HttpGet]

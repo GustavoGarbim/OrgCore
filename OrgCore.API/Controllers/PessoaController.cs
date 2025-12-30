@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OrgCore.Application.DTOs;
+using OrgCore.Application.DTOs.Pessoa;
 using OrgCore.Application.Interfaces;
 
 namespace OrgCore.API.Controllers

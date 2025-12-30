@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "OrgCore.API.Controllers.AuthController",
+    "Method": "GerarTokenAcesso",
+    "RelativePath": "api/Auth/gerar-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OrgCore.Application.DTOs.Auth.AuthDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "OrgCore.API.Controllers.ColaboradorController",
     "Method": "Vincular",
     "RelativePath": "api/Colaborador",
@@ -9,7 +25,39 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "OrgCore.Application.DTOs.VincularColaboradorDto",
+        "Type": "OrgCore.Application.DTOs.Empresa.Colaborador.CadastrarColaboradorDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrgCore.API.Controllers.ColaboradorController",
+    "Method": "ObterColaboradoresPorEmpresaId",
+    "RelativePath": "api/Colaborador/{empresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empresaId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrgCore.API.Controllers.ColaboradorController",
+    "Method": "ObterColaboradorPorId",
+    "RelativePath": "api/Colaborador/colaborador/{colaboradorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "colaboradorId",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -25,7 +73,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "OrgCore.Application.DTOs.NovaEmpresaDto",
+        "Type": "OrgCore.Application.DTOs.Empresa.EmpresaDTO",
         "IsRequired": true
       }
     ],
@@ -40,6 +88,37 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrgCore.API.Controllers.EmpresaController",
+    "Method": "AtribuirCargo",
+    "RelativePath": "api/Empresa/{empresaId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OrgCore.Application.DTOs.Empresa.AtribuirCargoDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "empresaId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrgCore.Application.DTOs.Empresa.AtribuirCargoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "OrgCore.API.Controllers.FormulariosController",
@@ -74,6 +153,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "OrgCore.API.Controllers.FormulariosController",
+    "Method": "Obter",
+    "RelativePath": "api/Formularios/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrgCore.API.Controllers.FormulariosController",
+    "Method": "Responder",
+    "RelativePath": "api/Formularios/responder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OrgCore.Application.DTOs.Forms.RealizarAvaliacaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrgCore.API.Controllers.FuncaotesteController",
+    "Method": "Teste",
+    "RelativePath": "api/Funcaoteste",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OrgCore.Application.DTOs.FuncaoTesteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrgCore.Domain.Evaluation.Enums.EnumCargo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "OrgCore.API.Controllers.PessoaController",
     "Method": "Registrar",
     "RelativePath": "api/Pessoa",
@@ -83,7 +220,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "OrgCore.Application.DTOs.CriarPessoaDto",
+        "Type": "OrgCore.Application.DTOs.Pessoa.CriarPessoaDto",
         "IsRequired": true
       }
     ],

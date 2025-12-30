@@ -8,14 +8,22 @@ namespace OrgCore.Application.Services
     public class FormularioService : IFormularioService
     {
         private readonly IFormularioRepository _formularioRepository;
+        private readonly IColaboradorRepository _colaboradorRepository;
 
-        public FormularioService(IFormularioRepository formularioRepository)
+        public FormularioService(IFormularioRepository formularioRepository, IColaboradorRepository colaboradorRepository)
         {
             _formularioRepository = formularioRepository;
+            _colaboradorRepository = colaboradorRepository;
         }
 
         public async Task<Guid> CriarTemplate(CriarFormularioDto dto)
         {
+            var cargoUsuario = await _colaboradorRepository.PegarCargoDoUsuarioLogado(dto.IdUsuarioCriador);
+            if(cargoUsuario != Domain.Evaluation.Enums.EnumCargo.Gerente)
+            {
+                throw new Exception("Usuario não possui o cargo necessário.");
+            }
+
             var form = new FormularioTemplate(dto.Titulo, dto.Descricao, dto.EmpresaId);
 
             foreach (var secaoDto in dto.Secoes)

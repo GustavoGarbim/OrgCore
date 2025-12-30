@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrgCore.Application.DTOs
+namespace OrgCore.Application.DTOs.Auth
 {
-    public class BuscarPessoaDto
+    public class AuthDto
     {
-        public Guid UsuarioId { get; set; }
+        public string cpf { get; set; }
     }
 }

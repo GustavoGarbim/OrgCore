@@ -32,6 +32,14 @@ namespace OrgCore.Infrastructure.Repositories
             return empresa;
         }
 
+        public async Task<FormularioTemplate> ObterPorId(Guid id)
+        {
+            return await _context.Formularios
+                .Include(f => f.Secoes)
+                .ThenInclude(s => s.Questoes)
+                .FirstOrDefaultAsync(f => f.Id == id);
+        }
+
         public async Task<bool> Commit()
         {
             return await _context.SaveChangesAsync() > 0;

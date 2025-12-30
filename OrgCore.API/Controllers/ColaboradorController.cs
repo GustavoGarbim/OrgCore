@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OrgCore.Application.DTOs;
+using OrgCore.Application.DTOs.Empresa.Colaborador;
 using OrgCore.Application.Interfaces;
 
 namespace OrgCore.API.Controllers
@@ -16,10 +16,28 @@ namespace OrgCore.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Vincular([FromBody] VincularColaboradorDto dto)
+        public async Task<IActionResult> Vincular([FromBody] CadastrarColaboradorDTO dto)
         {
             await _colaboradorService.VincularColaborador(dto);
-            return Ok($"Colaborador {dto.PessoaId} vinculado com sucesso a empresa {dto.EmpresaId}!");
+            return Ok($"Pessoa: {dto.PessoaId} vinculado com sucesso a Empresa: {dto.EmpresaId}");
+        }
+
+        [HttpGet("{empresaId}")]
+        public async Task<IActionResult> ObterColaboradoresPorEmpresaId(Guid empresaId)
+        {
+            var colaboradores = await _colaboradorService.ObterColaboradoresPorEmpresaId(empresaId);
+            return Ok(colaboradores);
+        }
+
+        [HttpGet("colaborador/{colaboradorId}")]
+        public async Task<IActionResult> ObterColaboradorPorId(Guid colaboradorId)
+        {
+            var colaborador = await _colaboradorService.ObterColaboradorPorId(colaboradorId);
+            if (colaborador == null)
+            {
+                return NotFound($"Colaborador com ID: {colaboradorId} não encontrado.");
+            }
+            return Ok(colaborador);
         }
     }
 }

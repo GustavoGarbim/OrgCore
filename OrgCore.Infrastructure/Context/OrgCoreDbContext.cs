@@ -14,6 +14,7 @@ namespace OrgCore.Infrastructure.Context
         public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Colaborador> Colaboradores { get; set; }
         public DbSet<FormularioTemplate> Formularios { get; set; }
+        public DbSet<Avaliacao> Avaliacoes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

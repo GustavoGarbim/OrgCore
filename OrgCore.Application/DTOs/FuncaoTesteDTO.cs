@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace OrgCore.Application.DTOs
 {
-    public class VincularColaboradorDto
+    public class FuncaoTesteDTO
     {
-        public Guid EmpresaId { get; set; }
-        public Guid PessoaId { get; set; }
+        public Guid ColaboradorId { get; set; }
     }
 }

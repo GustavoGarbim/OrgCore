@@ -1,4 +1,5 @@
 ﻿using OrgCore.Domain.Common;
+using OrgCore.Domain.Evaluation.Enums;
 
 namespace OrgCore.Domain.Contexts.Identity.Entities
 {
@@ -7,6 +8,8 @@ namespace OrgCore.Domain.Contexts.Identity.Entities
         public Guid EmpresaId { get; private set; }
         public Guid PessoaId { get; private set; }
         public bool IsGestor { get; private set; }
+
+        public EnumCargo Cargo { get; private set; }
 
         public virtual Empresa Empresa { get; private set; }
         public virtual Pessoa Pessoa { get; private set; }
@@ -18,6 +21,11 @@ namespace OrgCore.Domain.Contexts.Identity.Entities
             EmpresaId = empresaId;
             PessoaId = pessoaId;
             IsGestor = false;
+        }
+
+        public void AtribuirCargo(EnumCargo cargo)
+        {
+            Cargo = cargo;
         }
 
         public void TornarGestor()

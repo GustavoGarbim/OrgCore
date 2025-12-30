@@ -6,7 +6,7 @@ namespace OrgCore.Domain.Interfaces
     {
         Task Adicionar(FormularioTemplate formulario);
         Task<List<FormularioTemplate>> PegarFormulariosPorEmpresaAsync(Guid id);
-        //Task<List<FormularioTemplate>> PegarFormulariosAsync();
+        Task<FormularioTemplate> ObterPorId(Guid id);
         Task<bool> Commit();
     }
 }

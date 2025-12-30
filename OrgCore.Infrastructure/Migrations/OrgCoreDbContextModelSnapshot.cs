@@ -28,6 +28,9 @@ namespace OrgCore.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("Cargo")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("DataCriacao")
                         .HasColumnType("datetime2");
 
@@ -103,6 +106,29 @@ namespace OrgCore.Infrastructure.Migrations
                     b.ToTable("Pessoas");
                 });
 
+            modelBuilder.Entity("OrgCore.Domain.Evaluation.Entities.Avaliacao", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ColaboradorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DataCriacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataResposta")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("FormularioId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Avaliacoes", (string)null);
+                });
+
             modelBuilder.Entity("OrgCore.Domain.Evaluation.Entities.FormularioTemplate", b =>
                 {
                     b.Property<Guid>("Id")
@@ -155,6 +181,32 @@ namespace OrgCore.Infrastructure.Migrations
                     b.HasIndex("SecaoId");
 
                     b.ToTable("Questao");
+                });
+
+            modelBuilder.Entity("OrgCore.Domain.Evaluation.Entities.Resposta", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("AvaliacaoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DataCriacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("QuestaoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Valor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AvaliacaoId");
+
+                    b.ToTable("Resposta");
                 });
 
             modelBuilder.Entity("OrgCore.Domain.Evaluation.Entities.Secao", b =>
@@ -211,6 +263,14 @@ namespace OrgCore.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("OrgCore.Domain.Evaluation.Entities.Resposta", b =>
+                {
+                    b.HasOne("OrgCore.Domain.Evaluation.Entities.Avaliacao", null)
+                        .WithMany("Respostas")
+                        .HasForeignKey("AvaliacaoId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("OrgCore.Domain.Evaluation.Entities.Secao", b =>
                 {
                     b.HasOne("OrgCore.Domain.Evaluation.Entities.FormularioTemplate", null)
@@ -218,6 +278,11 @@ namespace OrgCore.Infrastructure.Migrations
                         .HasForeignKey("FormularioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("OrgCore.Domain.Evaluation.Entities.Avaliacao", b =>
+                {
+                    b.Navigation("Respostas");
                 });
 
             modelBuilder.Entity("OrgCore.Domain.Evaluation.Entities.FormularioTemplate", b =>

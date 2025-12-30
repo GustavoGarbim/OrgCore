@@ -5,6 +5,37 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Auth/gerar-token": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Colaborador": {
       "post": {
         "tags": [
@@ -14,21 +45,67 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/VincularColaboradorDto"
+                "$ref": "#/components/schemas/CadastrarColaboradorDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/VincularColaboradorDto"
+                "$ref": "#/components/schemas/CadastrarColaboradorDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/VincularColaboradorDto"
+                "$ref": "#/components/schemas/CadastrarColaboradorDTO"
               }
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Colaborador/{empresaId}": {
+      "get": {
+        "tags": [
+          "Colaborador"
+        ],
+        "parameters": [
+          {
+            "name": "empresaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Colaborador/colaborador/{colaboradorId}": {
+      "get": {
+        "tags": [
+          "Colaborador"
+        ],
+        "parameters": [
+          {
+            "name": "colaboradorId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -45,17 +122,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NovaEmpresaDto"
+                "$ref": "#/components/schemas/EmpresaDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/NovaEmpresaDto"
+                "$ref": "#/components/schemas/EmpresaDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/NovaEmpresaDto"
+                "$ref": "#/components/schemas/EmpresaDTO"
               }
             }
           }
@@ -73,6 +150,64 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Empresa/{empresaId}": {
+      "post": {
+        "tags": [
+          "Empresa"
+        ],
+        "parameters": [
+          {
+            "name": "empresaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtribuirCargoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtribuirCargoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtribuirCargoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtribuirCargoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtribuirCargoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtribuirCargoDTO"
+                }
+              }
+            }
           }
         }
       }
@@ -124,6 +259,108 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Formularios/responder": {
+      "post": {
+        "tags": [
+          "Formularios"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RealizarAvaliacaoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RealizarAvaliacaoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RealizarAvaliacaoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Formularios/{id}": {
+      "get": {
+        "tags": [
+          "Formularios"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Funcaoteste": {
+      "post": {
+        "tags": [
+          "Funcaoteste"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncaoTesteDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncaoTesteDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncaoTesteDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnumCargo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnumCargo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnumCargo"
+                }
+              }
+            }
           }
         }
       }
@@ -182,9 +419,50 @@
   },
   "components": {
     "schemas": {
+      "AtribuirCargoDTO": {
+        "type": "object",
+        "properties": {
+          "colaboradorId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "cargo": {
+            "$ref": "#/components/schemas/EnumCargo"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AuthDto": {
+        "type": "object",
+        "properties": {
+          "cpf": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CadastrarColaboradorDTO": {
+        "type": "object",
+        "properties": {
+          "empresaId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "pessoaId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
       "CriarFormularioDto": {
         "type": "object",
         "properties": {
+          "idUsuarioCriador": {
+            "type": "string",
+            "format": "uuid"
+          },
           "titulo": {
             "type": "string",
             "nullable": true
@@ -262,7 +540,7 @@
         },
         "additionalProperties": false
       },
-      "NovaEmpresaDto": {
+      "EmpresaDTO": {
         "type": "object",
         "properties": {
           "nomeFantasia": {
@@ -284,6 +562,62 @@
         },
         "additionalProperties": false
       },
+      "EnumCargo": {
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "FuncaoTesteDTO": {
+        "type": "object",
+        "properties": {
+          "colaboradorId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RealizarAvaliacaoDto": {
+        "type": "object",
+        "properties": {
+          "formularioId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "colaboradorId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "respostas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RespostaItemDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RespostaItemDto": {
+        "type": "object",
+        "properties": {
+          "questaoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "valor": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "TipoQuestao": {
         "enum": [
           1,
@@ -292,20 +626,6 @@
         ],
         "type": "integer",
         "format": "int32"
-      },
-      "VincularColaboradorDto": {
-        "type": "object",
-        "properties": {
-          "empresaId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "pessoaId": {
-            "type": "string",
-            "format": "uuid"
-          }
-        },
-        "additionalProperties": false
       }
     }
   }

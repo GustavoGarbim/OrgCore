@@ -1,19 +1,18 @@
-﻿using OrgCore.Application.DTOs;
+﻿using OrgCore.Application.DTOs.Empresa;
 using OrgCore.Application.Interfaces;
 using OrgCore.Domain.Contexts.Identity.Entities;
 using OrgCore.Domain.Interfaces;
-using OrgCore.Infrastructure.Repositories;
 
 namespace OrgCore.Application.Services
 {
     public class EmpresaService : IEmpresaService
     {
         private readonly IEmpresaRepository _empresaRepository;
-        private readonly PessoaRepository _pessoaRepository;
-        private readonly ColaboradorRepository _colaboradorRepository;
+        private readonly IPessoaRepository _pessoaRepository;
+        private readonly IColaboradorRepository _colaboradorRepository;
         private readonly IDocValidator _cnpjValidator;
 
-        public EmpresaService(IEmpresaRepository empresaRepository, PessoaRepository pessoaRepository, ColaboradorRepository colaboradorRepository, IDocValidator cnpjValidator)
+        public EmpresaService(IEmpresaRepository empresaRepository, IPessoaRepository pessoaRepository, IColaboradorRepository colaboradorRepository, IDocValidator cnpjValidator)
         {
             _empresaRepository = empresaRepository;
             _pessoaRepository = pessoaRepository;
@@ -21,7 +20,7 @@ namespace OrgCore.Application.Services
             _cnpjValidator = cnpjValidator;
         }
 
-        public async Task<Guid> RegistrarEmpresa(NovaEmpresaDto dto)
+        public async Task<Guid> RegistrarEmpresa(EmpresaDTO dto)
         {
             var cnpjValido = await _cnpjValidator.ValidarEmpresa(dto.Cnpj);
             if (!cnpjValido)
@@ -40,6 +39,17 @@ namespace OrgCore.Application.Services
             await _empresaRepository.Commit();
 
             return empresa.Id;
+        }
+
+        public async Task AtribuirCargo(AtribuirCargoDTO dto)
+        {
+            var colaborador = await _colaboradorRepository.ObterPorId(dto.ColaboradorId);
+            if (colaborador == null)
+            {
+                throw new Exception("Colaborador não encontrado.");
+            }
+            colaborador.AtribuirCargo(dto.Cargo);
+            await _colaboradorRepository.Commit();
         }
 
         public async Task<List<Empresa>> ObterTodasEmpresas()

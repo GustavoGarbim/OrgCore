@@ -1,4 +1,4 @@
-﻿using OrgCore.Application.DTOs;
+﻿using OrgCore.Application.DTOs.Pessoa;
 using OrgCore.Application.Interfaces;
 using OrgCore.Domain.Contexts.Identity.Entities;
 using OrgCore.Domain.Interfaces;

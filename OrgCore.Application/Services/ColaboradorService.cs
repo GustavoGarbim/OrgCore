@@ -1,4 +1,4 @@
-﻿using OrgCore.Application.DTOs;
+﻿using OrgCore.Application.DTOs.Empresa.Colaborador;
 using OrgCore.Application.Interfaces;
 using OrgCore.Domain.Contexts.Identity.Entities;
 using OrgCore.Domain.Interfaces;
@@ -18,7 +18,7 @@ namespace OrgCore.Application.Services
             _empresaRepository = empresaRepository;
         }
 
-        public async Task VincularColaborador(VincularColaboradorDto dto)
+        public async Task VincularColaborador(CadastrarColaboradorDTO dto)
         {
             var empresa = await _empresaRepository.ObterEmpresaPorId(dto.EmpresaId);
             if (empresa == null) throw new ArgumentException($"Empresa não encontrada: {dto.EmpresaId}", nameof(dto.EmpresaId));
@@ -30,6 +30,24 @@ namespace OrgCore.Application.Services
 
             await _colaboradorRepository.Vincular(colaborador);
             await _colaboradorRepository.Commit();
+        }
+
+        public async Task<IEnumerable<ColaboradorDTO>> ObterColaboradoresPorEmpresaId(Guid empresaId)
+        {
+            var colaboradores = await _colaboradorRepository.ObterColaboradoresPorEmpresaId(empresaId);
+            return colaboradores.Select(c => new ColaboradorDTO
+            {
+                ColaboradorId = c.Id,
+                EmpresaId = c.EmpresaId,
+                PessoaId = c.PessoaId,
+                NomeEmpresa = c.Empresa?.NomeFantasia ?? "Empresa não informada",
+                NomePessoa = c.Pessoa?.Nome ?? "Pessoa não informada"
+            });
+        }
+
+        public async Task<Colaborador?> ObterColaboradorPorId(Guid colaboradorId)
+        {
+            return await _colaboradorRepository.ObterPorId(colaboradorId);
         }
     }
 }
