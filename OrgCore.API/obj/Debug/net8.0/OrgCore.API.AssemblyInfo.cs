@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrgCore.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90f1841ad2363684a862aac942a5b042bf0ec158")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b06911ada7d56fc5d61aefd928914ac9b321be8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrgCore.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrgCore.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

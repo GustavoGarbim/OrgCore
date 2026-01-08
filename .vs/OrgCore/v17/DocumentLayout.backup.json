@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1F817C4-C754-48E6-A089-6D15CE02BD44}|OrgCore.Application\\OrgCore.Application.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.application\\services\\avaliacaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1F817C4-C754-48E6-A089-6D15CE02BD44}|OrgCore.Application\\OrgCore.Application.csproj|solutionrelative:orgcore.application\\services\\avaliacaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1F817C4-C754-48E6-A089-6D15CE02BD44}|OrgCore.Application\\OrgCore.Application.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.application\\services\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F817C4-C754-48E6-A089-6D15CE02BD44}|OrgCore.Application\\OrgCore.Application.csproj|solutionrelative:orgcore.application\\services\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30B7FB31-1577-4509-AB79-D1370326454A}|OrgCore.Infrastructure\\OrgCore.Infrastructure.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.infrastructure\\repositories\\formulariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30B7FB31-1577-4509-AB79-D1370326454A}|OrgCore.Infrastructure\\OrgCore.Infrastructure.csproj|solutionrelative:orgcore.infrastructure\\repositories\\formulariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|solutionrelative:orgcore.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93B94D25-421D-43B1-9007-56FDAF210272}|OrgCore.Domain\\OrgCore.Domain.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.domain\\interfaces\\iformulariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93B94D25-421D-43B1-9007-56FDAF210272}|OrgCore.Domain\\OrgCore.Domain.csproj|solutionrelative:orgcore.domain\\interfaces\\iformulariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|solutionrelative:orgcore.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.api\\controllers\\formularioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|solutionrelative:orgcore.api\\controllers\\formularioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1F817C4-C754-48E6-A089-6D15CE02BD44}|OrgCore.Application\\OrgCore.Application.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.application\\dtos\\pessoa\\pessoadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F817C4-C754-48E6-A089-6D15CE02BD44}|OrgCore.Application\\OrgCore.Application.csproj|solutionrelative:orgcore.application\\dtos\\pessoa\\pessoadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|c:\\users\\74840\\desktop\\projetoc#\\orgcore\\orgcore.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A65ED90-E8A7-475E-9DD5-5135EAFAAF48}|OrgCore.API\\OrgCore.API.csproj|solutionrelative:orgcore.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 214,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IFormularioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Domain\\Interfaces\\IFormularioRepository.cs",
-              "RelativeDocumentMoniker": "OrgCore.Domain\\Interfaces\\IFormularioRepository.cs",
-              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Domain\\Interfaces\\IFormularioRepository.cs",
-              "RelativeToolTip": "OrgCore.Domain\\Interfaces\\IFormularioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ColaboradorService.cs",
+              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Application\\Services\\ColaboradorService.cs",
+              "RelativeDocumentMoniker": "OrgCore.Application\\Services\\ColaboradorService.cs",
+              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Application\\Services\\ColaboradorService.cs",
+              "RelativeToolTip": "OrgCore.Application\\Services\\ColaboradorService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T17:30:48.083Z",
+              "WhenOpened": "2026-01-07T13:45:09.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormularioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Infrastructure\\Repositories\\FormularioRepository.cs",
-              "RelativeDocumentMoniker": "OrgCore.Infrastructure\\Repositories\\FormularioRepository.cs",
-              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Infrastructure\\Repositories\\FormularioRepository.cs",
-              "RelativeToolTip": "OrgCore.Infrastructure\\Repositories\\FormularioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA4AAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\Program.cs",
+              "RelativeDocumentMoniker": "OrgCore.API\\Program.cs",
+              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\Program.cs",
+              "RelativeToolTip": "OrgCore.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T17:30:34.557Z",
+              "WhenOpened": "2026-01-07T12:20:04.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AvaliacaoService.cs",
-              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Application\\Services\\AvaliacaoService.cs",
-              "RelativeDocumentMoniker": "OrgCore.Application\\Services\\AvaliacaoService.cs",
-              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Application\\Services\\AvaliacaoService.cs",
-              "RelativeToolTip": "OrgCore.Application\\Services\\AvaliacaoService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T17:29:49.485Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\appsettings.json",
+              "RelativeDocumentMoniker": "OrgCore.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\appsettings.json",
+              "RelativeToolTip": "OrgCore.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-07T11:57:58.204Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FormulariosController.cs",
-              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\Controllers\\FormulariosController.cs",
-              "RelativeDocumentMoniker": "OrgCore.API\\Controllers\\FormulariosController.cs",
-              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\Controllers\\FormulariosController.cs",
-              "RelativeToolTip": "OrgCore.API\\Controllers\\FormulariosController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCcAAABSAAAAAAAAAA==",
+              "Title": "PessoaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Application\\DTOs\\Pessoa\\PessoaDTO.cs",
+              "RelativeDocumentMoniker": "OrgCore.Application\\DTOs\\Pessoa\\PessoaDTO.cs",
+              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Application\\DTOs\\Pessoa\\PessoaDTO.cs",
+              "RelativeToolTip": "OrgCore.Application\\DTOs\\Pessoa\\PessoaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T17:28:57.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-06T11:23:22.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ColaboradorController.cs",
+              "DocumentMoniker": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\Controllers\\ColaboradorController.cs",
+              "RelativeDocumentMoniker": "OrgCore.API\\Controllers\\ColaboradorController.cs",
+              "ToolTip": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.API\\Controllers\\ColaboradorController.cs",
+              "RelativeToolTip": "OrgCore.API\\Controllers\\ColaboradorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T11:23:08.378Z"
             }
           ]
         }
