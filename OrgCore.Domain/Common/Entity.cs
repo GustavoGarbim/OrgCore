@@ -3,12 +3,12 @@
     public class Entity
     {
         public Guid Id { get; private set; }
-        public DateTime DataCriacao { get; private set; } = DateTime.UtcNow.ToLocalTime();
+        public DateTime DataCriacao { get; private set; }
 
         protected Entity()
         {
             Id = Guid.NewGuid();
-            DataCriacao = DateTime.UtcNow.ToLocalTime();
+            DataCriacao = DateTime.UtcNow;
         }
     }
 }

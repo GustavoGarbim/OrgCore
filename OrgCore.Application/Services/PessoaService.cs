@@ -2,16 +2,15 @@
 using OrgCore.Application.Interfaces;
 using OrgCore.Domain.Contexts.Identity.Entities;
 using OrgCore.Domain.Interfaces;
-using OrgCore.Infrastructure.Repositories;
 
 namespace OrgCore.Application.Services
 {
     public class PessoaService : IPessoaService
     {
         private readonly IDocValidator _cpfValidator;
-        private readonly PessoaRepository _pessoaRepository;
+        private readonly IPessoaRepository _pessoaRepository;
 
-        public PessoaService(IDocValidator cpfValidator, PessoaRepository pessoaRepository)
+        public PessoaService(IDocValidator cpfValidator, IPessoaRepository pessoaRepository)
         {
             _cpfValidator = cpfValidator;
             _pessoaRepository = pessoaRepository;
@@ -22,7 +21,7 @@ namespace OrgCore.Application.Services
             var cpfValido = await _cpfValidator.ValidarPessoa(dto.Cpf);
             if(!cpfValido)
             {
-                throw new Exception("CPF Inválido.");
+                throw new ArgumentException("CPF Inválido.", nameof(dto.Cpf));
             }
 
             var pessoa = new Pessoa(dto.Nome, dto.Cpf, dto.EmailPessoal);

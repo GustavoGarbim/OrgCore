@@ -18,8 +18,23 @@ namespace OrgCore.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Registrar([FromBody] CriarPessoaDto dto)
         {
-            var pessoa = await _pessoaService.RegistrarPessoa(dto);
-            return Ok(new { Pessoa = pessoa, Mensagem = "Pessoa Registrada com sucesso!" });
+            try 
+            {
+                var pessoa = await _pessoaService.RegistrarPessoa(dto);
+                var resposta = new 
+                { 
+                    Id = pessoa.Id,
+                    Nome = pessoa.Nome,
+                    Email = pessoa.EmailPessoal,
+                    Mensagem = "Pessoa Registrada com sucesso!" 
+                };
+
+                return CreatedAtAction(nameof(BuscarPessoaId), new { id = pessoa.Id }, resposta);
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(new { Erro = ex.Message });
+            }
         }
 
         [HttpGet]

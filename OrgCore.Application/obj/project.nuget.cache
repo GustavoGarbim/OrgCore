@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3o5lhQPgeiY=",
+  "dgSpecHash": "wFfPQ5UGDtg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Application\\OrgCore.Application.csproj",
+  "projectFilePath": "C:\\Users\\74840\\Desktop\\orgcore\\OrgCore\\OrgCore.Application\\OrgCore.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\74840\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\74840\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

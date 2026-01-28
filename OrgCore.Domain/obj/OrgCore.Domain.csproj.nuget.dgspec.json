@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Domain\\OrgCore.Domain.csproj": {}
+    "C:\\Users\\74840\\Desktop\\orgcore\\OrgCore\\OrgCore.Domain\\OrgCore.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Domain\\OrgCore.Domain.csproj": {
+    "C:\\Users\\74840\\Desktop\\orgcore\\OrgCore\\OrgCore.Domain\\OrgCore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Domain\\OrgCore.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\74840\\Desktop\\orgcore\\OrgCore\\OrgCore.Domain\\OrgCore.Domain.csproj",
         "projectName": "OrgCore.Domain",
-        "projectPath": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Domain\\OrgCore.Domain.csproj",
+        "projectPath": "C:\\Users\\74840\\Desktop\\orgcore\\OrgCore\\OrgCore.Domain\\OrgCore.Domain.csproj",
         "packagesPath": "C:\\Users\\74840\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\74840\\Desktop\\ProjetoC#\\OrgCore\\OrgCore.Domain\\obj\\",
+        "outputPath": "C:\\Users\\74840\\Desktop\\orgcore\\OrgCore\\OrgCore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
